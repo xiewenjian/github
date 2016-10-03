@@ -1,0 +1,977 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>XMPP框架_模块 | </title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../Day-3/10-开发实战_心跳检测.html" />
+    
+    
+    <link rel="prev" href="../Day-3/08 -开发实战_出席.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book"
+        data-level="3.9"
+        data-chapter-title="XMPP框架_模块"
+        data-filepath="Day-3/09-XMPP框架_模块.md"
+        data-basepath=".."
+        data-revision="Tue Jul 05 2016 13:44:06 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+            
+
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Introduction
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="Day-1/index.html">
+            
+                
+                    <a href="../Day-1/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        第一天
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="Day-1/01-CoreData简介.html">
+            
+                
+                    <a href="../Day-1/01-CoreData简介.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        CoreData简介
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Day-1/02-初识CoreData.html">
+            
+                
+                    <a href="../Day-1/02-初识CoreData.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        初识CoreData
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="Day-1/03-CoreData原理.html">
+            
+                
+                    <a href="../Day-1/03-CoreData原理.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        CoreData原理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="Day-1/04-手动创建CoreDataStack.html">
+            
+                
+                    <a href="../Day-1/04-手动创建CoreDataStack.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        手动创建CoreDataStack
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="Day-1/05-Scalar勾选.html">
+            
+                
+                    <a href="../Day-1/05-Scalar勾选.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                        Scalar勾选
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="Day-1/06-CoreData增删改查.html">
+            
+                
+                    <a href="../Day-1/06-CoreData增删改查.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.</b>
+                        
+                        CoreData增删改查
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="Day-1/07-多表关联.html">
+            
+                
+                    <a href="../Day-1/07-多表关联.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.7.</b>
+                        
+                        多表关联
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="Day-1/08-谓词NSPredicate.html">
+            
+                
+                    <a href="../Day-1/08-谓词NSPredicate.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.8.</b>
+                        
+                        谓词NSPredicate
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="Day-1/09-实战项目通讯录.html">
+            
+                
+                    <a href="../Day-1/09-实战项目通讯录.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.9.</b>
+                        
+                        实战项目通讯录
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="Day-1/10-CoreData总结.html">
+            
+                
+                    <a href="../Day-1/10-CoreData总结.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.10.</b>
+                        
+                        CoreData总结
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="Day-2/index.html">
+            
+                
+                    <a href="../Day-2/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        第二天
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="Day-2/00-前言-XMPP课程要求.html">
+            
+                
+                    <a href="../Day-2/00-前言-XMPP课程要求.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        前言-XMPP课程要求
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="Day-2/01-OSI七层模型.html">
+            
+                
+                    <a href="../Day-2/01-OSI七层模型.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        OSI七层模型
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="Day-2/02-TCP和UDP协议.html">
+            
+                
+                    <a href="../Day-2/02-TCP和UDP协议.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        TCP和UDP协议
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="Day-2/03-Socket.html">
+            
+                
+                    <a href="../Day-2/03-Socket.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        Socket
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="Day-2/04-Socket示例.html">
+            
+                
+                    <a href="../Day-2/04-Socket示例.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        Socket示例
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="Day-2/05-Mac应用程序打包.html">
+            
+                
+                    <a href="../Day-2/05-Mac应用程序打包.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        Mac应用程序打包
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="Day-3/index.html">
+            
+                
+                    <a href="../Day-3/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        第三天
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="Day-3/01-XMPP介绍.html">
+            
+                
+                    <a href="../Day-3/01-XMPP介绍.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        XMPP介绍
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="Day-3/02-XMPP环境配置.html">
+            
+                
+                    <a href="../Day-3/02-XMPP环境配置.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        XMPP环境配置
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="Day-3/03-XMPPFramework框架导入.html">
+            
+                
+                    <a href="../Day-3/03-XMPPFramework框架导入.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        XMPPFramework框架导入
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="Day-3/04-XMPPFramework介绍.html">
+            
+                
+                    <a href="../Day-3/04-XMPPFramework介绍.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        XMPPFramework介绍
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="Day-3/05-开发实战_登录.html">
+            
+                
+                    <a href="../Day-3/05-开发实战_登录.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        开发实战_登录
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="Day-3/06-开发实战_单例类的搭建.html">
+            
+                
+                    <a href="../Day-3/06-开发实战_单例类的搭建.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.6.</b>
+                        
+                        开发实战_单例类的搭建
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="Day-3/07-开发实战_登录界面搭建.html">
+            
+                
+                    <a href="../Day-3/07-开发实战_登录界面搭建.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.7.</b>
+                        
+                        开发实战_登录界面搭建
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="Day-3/08 -开发实战_出席.html">
+            
+                
+                    <a href="../Day-3/08 -开发实战_出席.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.8.</b>
+                        
+                        开发实战_出席
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.9" data-path="Day-3/09-XMPP框架_模块.html">
+            
+                
+                    <a href="../Day-3/09-XMPP框架_模块.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.9.</b>
+                        
+                        XMPP框架_模块
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10" data-path="Day-3/10-开发实战_心跳检测.html">
+            
+                
+                    <a href="../Day-3/10-开发实战_心跳检测.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.10.</b>
+                        
+                        开发实战_心跳检测
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.11" data-path="Day-3/11-开发实战_XML查看.html">
+            
+                
+                    <a href="../Day-3/11-开发实战_XML查看.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.11.</b>
+                        
+                        开发实战_XML查看
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.12" data-path="Day-3/12-XMPP通讯过程.html">
+            
+                
+                    <a href="../Day-3/12-XMPP通讯过程.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.12.</b>
+                        
+                        XMPP通讯过程
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.13" data-path="Day-3/13-开发实战_自动重连.html">
+            
+                
+                    <a href="../Day-3/13-开发实战_自动重连.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.13.</b>
+                        
+                        开发实战_自动重连
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.14" data-path="Day-3/14-开发实战_界面框架搭建.html">
+            
+                
+                    <a href="../Day-3/14-开发实战_界面框架搭建.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.14.</b>
+                        
+                        开发实战_界面框架搭建
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="Day-4/index.html">
+            
+                
+                    <a href="../Day-4/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        第四天
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="Day-4/01-开发实战_好友列表.html">
+            
+                
+                    <a href="../Day-4/01-开发实战_好友列表.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        开发实战_好友列表
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="Day-4/02-开发实战_好友界面.html">
+            
+                
+                    <a href="../Day-4/02-开发实战_好友界面.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.2.</b>
+                        
+                        开发实战_好友界面
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="Day-4/03-开发实战_好友添加和删除.html">
+            
+                
+                    <a href="../Day-4/03-开发实战_好友添加和删除.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.3.</b>
+                        
+                        开发实战_好友添加和删除
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="Day-4/04-开发实战-聊天记录.html">
+            
+                
+                    <a href="../Day-4/04-开发实战-聊天记录.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.4.</b>
+                        
+                        开发实战-聊天记录
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="Day-4/05-开发实战-发送消息.html">
+            
+                
+                    <a href="../Day-4/05-开发实战-发送消息.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.5.</b>
+                        
+                        开发实战-发送消息
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="Day-4/06-开发实战_聊天界面.html">
+            
+                
+                    <a href="../Day-4/06-开发实战_聊天界面.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.6.</b>
+                        
+                        开发实战_聊天界面
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="Day-4/07-开发实战-文件发送.html">
+            
+                
+                    <a href="../Day-4/07-开发实战-文件发送.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.7.</b>
+                        
+                        开发实战-文件发送
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.8" data-path="Day-4/08-开发实战_最近联系人.html">
+            
+                
+                    <a href="../Day-4/08-开发实战_最近联系人.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.8.</b>
+                        
+                        开发实战_最近联系人
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.9" data-path="Day-4/09-开发实战_头像显示.html">
+            
+                
+                    <a href="../Day-4/09-开发实战_头像显示.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.9.</b>
+                        
+                        开发实战_头像显示
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4.10" data-path="Day-4/10-开发实战_资料更新和显示.html">
+            
+                
+                    <a href="../Day-4/10-开发实战_资料更新和显示.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.10.</b>
+                        
+                        开发实战_资料更新和显示
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="Day-5/index.html">
+            
+                
+                    <a href="../Day-5/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        第五天
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="Day-5/01-开发实战_群聊功能.html">
+            
+                
+                    <a href="../Day-5/01-开发实战_群聊功能.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        开发实战_群聊功能
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="Day-5/02-融云SDK介绍.html">
+            
+                
+                    <a href="../Day-5/02-融云SDK介绍.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.2.</b>
+                        
+                        融云SDK介绍
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="Day-5/03-融云框架导入.html">
+            
+                
+                    <a href="../Day-5/03-融云框架导入.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.3.</b>
+                        
+                        融云框架导入
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="Day-5/04-融云聊天实现.html">
+            
+                
+                    <a href="../Day-5/04-融云聊天实现.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.4.</b>
+                        
+                        融云聊天实现
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" ></a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="xmpp&#x6846;&#x67B6;&#x6A21;&#x5757;">XMPP&#x6846;&#x67B6;-&#x6A21;&#x5757;</h1>
+<p><img src="images/0801.png" alt=""></p>
+<h2 id="11&#x6A21;&#x5757;">1.1-&#x6A21;&#x5757;</h2>
+<pre><code>* &#x4EC0;&#x4E48;&#x662F;&#x6A21;&#x5757;
+    * XMPP&#x6846;&#x67B6;&#x5206;&#x4E3A;&#x4E03;&#x4E2A;&#x6587;&#x4EF6;&#x5939;
+        * Authemtication  &#x8FD9;&#x4E00;&#x90E8;&#x5206;&#x662F;&#x5904;&#x7406;&#x670D;&#x52A1;&#x5668;&#x9A8C;&#x8BC1;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x6211;&#x4EEC;&#x4E00;&#x822C;&#x4E0D;&#x9700;&#x5904;&#x7406;
+        * Categories  &#x8FD9;&#x4E00;&#x90E8;&#x5206;&#x662F;&#x4E00;&#x4E9B;&#x5DE5;&#x5177;&#x7684;&#x5206;&#x7C7B;&#xFF0C;&#x6211;&#x4EEC;&#x4E00;&#x822C;&#x4E5F;&#x4E0D;&#x7528;&#x5904;&#x7406;
+        * Core &#x8FD9;&#x91CC;&#x9762;&#x662F;XMPP&#x7684;&#x6838;&#x5FC3;&#x7C7B;&#x5E93;
+        * Extension  &#x62D3;&#x5C55;&#x7C7B;&#x5E93;&#xFF0C;&#x8FD9;&#x91CC;&#x9762;&#x4E3B;&#x8981;&#x662F;&#x7528;&#x5230;&#x9762;&#x5411;&#x5BF9;&#x8C61;&#x7684;&#x601D;&#x7EF4;&#x5C06;XMPP&#x901A;&#x8BAF;&#x7684;&#x4E00;&#x4E9B;&#x529F;&#x80FD;&#x6A21;&#x5757;&#x8FDB;&#x884C;&#x5C01;&#x88C5;&#xFF08;&#x5982; &#x5FC3;&#x8DF3;&#x68C0;&#x6D4B;&#x6A21;&#x5757; &#x804A;&#x5929;&#x6A21;&#x5757; &#x597D;&#x53CB;&#x6A21;&#x5757;&#x7B49;&#xFF09;
+        * Utilties &#x5DE5;&#x5177;&#x7C7B;&#x5E93; &#x8FD9;&#x91CC;&#x9762;&#x4E3B;&#x8981;&#x662F;&#x4F5C;&#x8005;&#x5199;&#x8FD9;&#x4E2A;&#x6846;&#x67B6;&#x65F6;&#x7528;&#x5230;&#x7684;&#x4E00;&#x4E9B;&#x5DE5;&#x5177;&#x7C7B; &#x6211;&#x4EEC;&#x4E00;&#x822C;&#x4E0D;&#x9700;&#x5904;&#x7406;
+        * Vendor &#x529F;&#x80FD;&#x7C7B;&#x5E93;  &#x8FD9;&#x91CC;&#x9762;&#x4E3B;&#x8981;&#x662F;&#x4F5C;&#x8005;&#x5728;&#x5199;&#x8FD9;&#x4E2A;&#x6846;&#x67B6;&#x65F6;&#x7528;&#x5230;&#x7684;&#x4E00;&#x4E9B;&#x529F;&#x80FD;&#x7C7B;(&#x5982; scoket&#x901A;&#x8BAF; xml&#x89E3;&#x6790;&#x7B49;) &#x6211;&#x4EEC;&#x4E00;&#x822C;&#x4E0D;&#x9700;&#x5904;&#x7406;
+        * Xcode  &#x6D4B;&#x8BD5;&#x7C7B;&#x5E93;  &#x8FD9;&#x91CC;&#x9762;&#x4E3B;&#x8981;&#x662F;&#x4E00;&#x4E9B;&#x6D4B;&#x8BD5;&#x7684;&#x4E1C;&#x897F;  &#x6211;&#x4EEC;&#x4E00;&#x822C;&#x4E5F;&#x4E0D;&#x9700;&#x8981;&#x5904;&#x7406;
+</code></pre><h2 id="12&#x6A21;&#x5757;&#x7684;&#x4F5C;&#x7528;">1.2-&#x6A21;&#x5757;&#x7684;&#x4F5C;&#x7528;</h2>
+<pre><code>* &#x5C06;&#x6BCF;&#x4E00;&#x4E2A;&#x529F;&#x80FD;&#x70B9;&#x8FDB;&#x884C;&#x5206;&#x79BB;&#xFF0C;&#x8FD9;&#x662F;&#x4E00;&#x79CD;&#x7F16;&#x7A0B;&#x7684;&#x601D;&#x60F3;
+</code></pre><h2 id="13&#x5982;&#x4F55;&#x4F7F;&#x7528;&#x6A21;&#x5757;">1.3-&#x5982;&#x4F55;&#x4F7F;&#x7528;&#x6A21;&#x5757;</h2>
+<pre><code>* &#x51E0;&#x4E4E;&#x6240;&#x6709;&#x6A21;&#x5757;&#x7684;&#x6DFB;&#x52A0;&#x90FD;&#x53EA;&#x6709;&#x4E09;&#x4E2A;&#x6B65;&#x9AA4;
+    * 1.&#x751F;&#x6210;&#x6A21;&#x5757;&#xFF08;&#x521B;&#x5EFA; &#x8BBE;&#x7F6E;&#x4EE3;&#x7406;&#xFF09;
+    * 2.&#x914D;&#x7F6E;&#x6A21;&#x5757; &#xFF08;&#x914D;&#x7F6E;&#x4E00;&#x4E9B;&#x6A21;&#x5757;&#x7684;&#x53C2;&#x6570; &#x53EF;&#x9009;&#xFF09;
+    * 3.&#x6FC0;&#x6D3B;&#x6A21;&#x5757;
+</code></pre><h2 id="14xmpp&#x4E2D;&#x5E38;&#x7528;&#x6A21;&#x5757;">1.4-XMPP&#x4E2D;&#x5E38;&#x7528;&#x6A21;&#x5757;</h2>
+<pre><code class="lang-objc">
+<span class="hljs-comment">/************************ &#x6A21;&#x5757; ***************************/</span>
+<span class="hljs-comment">//&#x5FC3;&#x8DF3;&#x68C0;&#x6D4B;</span>
+<span class="hljs-preprocessor">#import <span class="hljs-title">&lt;XMPPAutoPing.h&gt;</span></span>
+<span class="hljs-comment">//&#x91CD;&#x8FDE;</span>
+<span class="hljs-preprocessor">#import <span class="hljs-title">&lt;XMPPReconnect.h&gt;</span></span>
+<span class="hljs-comment">//&#x82B1;&#x540D;&#x518C;</span>
+<span class="hljs-preprocessor">#import <span class="hljs-title">&lt;XMPPRoster.h&gt;</span></span>
+<span class="hljs-preprocessor">#import <span class="hljs-title">&lt;XMPPRosterCoreDataStorage.h&gt;</span>//&#x82B1;&#x540D;&#x518C;&#x5B58;&#x50A8;&#x5668;</span>
+<span class="hljs-comment">//&#x804A;&#x5929;&#x8BB0;&#x5F55;</span>
+<span class="hljs-preprocessor">#import <span class="hljs-title">&lt;XMPPMessageArchiving.h&gt;</span></span>
+<span class="hljs-preprocessor">#import <span class="hljs-title">&lt;XMPPMessageArchivingCoreDataStorage.h&gt;</span></span>
+
+<span class="hljs-comment">//&#x6587;&#x4EF6;&#x63A5;&#x6536;</span>
+<span class="hljs-preprocessor">#import <span class="hljs-title">&quot;XMPPIncomingFileTransfer.h&quot;</span></span>
+<span class="hljs-comment">//&#x6587;&#x4EF6;&#x53D1;&#x9001;</span>
+<span class="hljs-preprocessor">#import <span class="hljs-title">&quot;XMPPOutgoingFileTransfer.h&quot;</span></span>
+
+<span class="hljs-comment">//&#x5934;&#x50CF;&#x6A21;&#x5757;</span>
+<span class="hljs-preprocessor">#import <span class="hljs-title">&lt;XMPPvCardAvatarModule.h&gt;</span></span>
+<span class="hljs-preprocessor">#import <span class="hljs-title">&lt;XMPPvCardCoreDataStorage.h&gt;</span></span>
+<span class="hljs-preprocessor">#import <span class="hljs-title">&lt;XMPPvCardTemp.h&gt;</span>//&#x5728;XMPPvCardTempModule&#x4E2D;,@class XMPPvCardTemp;,&#x5B9E;&#x9645;&#x4F7F;&#x7528;&#x8981;import</span>
+
+<span class="hljs-comment">//&#x804A;&#x5929;&#x5BA4;&#x6A21;&#x5757;(&#x7FA4;&#x804A;)</span>
+<span class="hljs-preprocessor">#import <span class="hljs-title">&lt;XMPPMUC.h&gt;</span>//&#x4F7F;&#x7528;&#x53D1;&#x73B0;&#x670D;&#x52A1;&#x5668;&#x4E0A;&#x7684;&#x804A;&#x5929;&#x5BA4;&#x670D;&#x52A1;</span>
+<span class="hljs-preprocessor">#import <span class="hljs-title">&lt;XMPPRoomCoreDataStorage.h&gt;</span>//&#x50A8;&#x5B58;&#x804A;&#x5929;&#x5BA4;&#x76F8;&#x5173;&#x6570;&#x636E;</span>
+</code></pre>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../Day-3/08 -开发实战_出席.html" class="navigation navigation-prev " aria-label="Previous page: 开发实战_出席"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../Day-3/10-开发实战_心跳检测.html" class="navigation navigation-next " aria-label="Next page: 开发实战_心跳检测"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
